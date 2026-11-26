@@ -1,0 +1,56 @@
+{
+  "name": "dsh-plan-gate",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin: gives agents a request_plan_mode tool that asks you at the composer before the session switches into plan mode.",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Stungliu <1609017503@qq.com>",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plan-mode",
+    "workflow",
+    "agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stungliu/dsh-plan-gate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Stungliu/dsh-plan-gate/issues"
+  },
+  "homepage": "https://github.com/Stungliu/dsh-plan-gate#readme",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-commands": "*",
+    "@deepseek-ai/dsh-session-projection": "*",
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/dsh-user-questions": "*"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.2-rc.5": "compatible"
+      }
+    }
+  }
+}

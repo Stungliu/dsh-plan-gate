@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Plan mode request",
+    "description": "Adds the request_plan_mode tool: the agent asks you at the composer before switching the session into plan mode, then runs /plan for you.",
+    "detail": "docs/DETAIL.md"
+  }
+}

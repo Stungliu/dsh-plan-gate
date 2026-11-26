@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Plan 模式请求",
+    "description": "提供 request_plan_mode 工具：Agent 想进入 Plan 模式时先在输入框处征求你的确认，你点一下它就代为执行 /plan。",
+    "detail": "docs/DETAIL.md"
+  }
+}

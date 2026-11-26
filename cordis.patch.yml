@@ -1,0 +1,7 @@
+# Host rows inserted by the dsh-plan-gate bundle.
+# A root-tree row registers its tool in the global tool layer, so every Agent in
+# every preset and project sees `request_plan_mode`.
+- insert:
+    - id: plan-gate
+      name: 'dsh-plan-gate'
+      config: {}
